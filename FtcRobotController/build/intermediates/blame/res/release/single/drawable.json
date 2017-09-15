@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_menu.png",
+        "source": "/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/res/drawable/icon_menu.png"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/release/drawable/feedback_shape_orange.xml",
         "source": "/Users/student/.android/build-cache/79ce16b8c6593ed1f3682622f8f57418e13cbf9e/output/res/drawable/feedback_shape_orange.xml"
     },
@@ -14,6 +18,22 @@
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/release/drawable/button_shape.xml",
         "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/drawable/button_shape.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_robotcontroller.png",
+        "source": "/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/res/drawable/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/release/drawable/button_shape.xml",
+        "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/drawable/button_shape.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/release/drawable/feedback_shape_orange.xml",
+        "source": "/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/res/drawable/feedback_shape_orange.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/release/drawable/black_border.xml",
+        "source": "/Users/student/.android/build-cache/43d294d37447dfa9b92d137cb234eac21bb7b1bd/output/res/drawable/black_border.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/release/drawable/icon_robotcontroller.png",

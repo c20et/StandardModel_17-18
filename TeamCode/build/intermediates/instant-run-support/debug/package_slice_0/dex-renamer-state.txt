@@ -1,0 +1,4 @@
+#Fri Sep 15 15:42:02 EDT 2017
+base.0=/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0
+renamed.0=classes.dex
+file.0=/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex
