@@ -78,6 +78,8 @@ public class BasicOpMode_Linear extends LinearOpMode {
         FrontLeftDrive.setDirection(DcMotor.Direction.FORWARD);
         FrontRightDrive.setDirection(DcMotor.Direction.REVERSE);
 
+        BackRightDrive.setDirection(DcMotor.Direction.REVERSE);
+
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
         runtime.reset();
@@ -108,7 +110,7 @@ public class BasicOpMode_Linear extends LinearOpMode {
             FrontLeftDrive.setPower(leftPower);
             BackLeftDrive.setPower(leftPower);
             FrontRightDrive.setPower(rightPower);
-            BackRightDrive.setPower(rightPower*-1);
+            BackRightDrive.setPower(rightPower);
 
             // Show the elapsed game time and wheel power.
             telemetry.addData("Status", "Run Time: " + runtime.toString());
