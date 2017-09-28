@@ -35,8 +35,9 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
+
 @TeleOp(name="Basic: Linear OpMode", group="Linear Opmode")
-public class BasicOpMode_Linear extends LinearOpMode {
+public class Mecanum_BasicOpMode_Linear extends LinearOpMode {
 
     // Declare OpMode members.
     private ElapsedTime runtime = new ElapsedTime();
@@ -61,10 +62,11 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
         // Most robots need the motor on one side to be reversed to drive forward
         // Reverse the motor that runs backwards when connected directly to the battery
+        // CHECK ONCE BUILT
         FrontLeftDrive.setDirection(DcMotor.Direction.FORWARD);
-        FrontRightDrive.setDirection(DcMotor.Direction.REVERSE);
-
-        BackRightDrive.setDirection(DcMotor.Direction.REVERSE);
+        FrontRightDrive.setDirection(DcMotor.Direction.FORWARD);
+        BackRightDrive.setDirection(DcMotor.Direction.FORWARD);
+        BackLeftDrive.setDirection(DcMotor.Direction.FORWARD);
 
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
@@ -84,8 +86,23 @@ public class BasicOpMode_Linear extends LinearOpMode {
             // - This uses basic math to combine motions and is easier to drive straight.
             double drive = -gamepad1.left_stick_y;
             double turn  =  gamepad1.right_stick_x;
+
             leftPower    = Range.clip(drive + turn, -1.0, 1.0) ;
             rightPower   = Range.clip(drive - turn, -1.0, 1.0) ;
+
+            if(gamepad1.right_bumper) {
+                FrontLeftDrive.setPower(-1);
+                FrontRightDrive.setPower(1);
+                BackLeftDrive.setPower(1);
+                BackRightDrive.setPower(-1);
+            }
+
+            if(gamepad1.left_bumper) {
+                FrontLeftDrive.setPower(1);
+                FrontRightDrive.setPower(-1);
+                BackLeftDrive.setPower(-1);
+                BackRightDrive.setPower(1);
+            }
 
             // Tank Mode uses one stick to control each wheel.
             // - This requires no math, but it is hard to drive forward slowly and keep straight.
