@@ -54,10 +54,10 @@ public class Mecanum_BasicOpMode_Linear extends LinearOpMode {
         // Initialize the hardware variables. Note that the strings used here as parameters
         // to 'get' must correspond to the names assigned during the robot configuration
         // step (using the FTC Robot Controller app on the phone).
-        FrontLeftDrive = hardwareMap.get(DcMotor.class, "FLD");
-        FrontRightDrive = hardwareMap.get(DcMotor.class, "FRD");
-        BackLeftDrive = hardwareMap.get(DcMotor.class, "BLD");
-        BackRightDrive = hardwareMap.get(DcMotor.class, "BRD");
+        FrontLeftDrive = hardwareMap.get(DcMotor.class, "frontLeftMotor");
+        FrontRightDrive = hardwareMap.get(DcMotor.class, "frontRightMotor");
+        BackLeftDrive = hardwareMap.get(DcMotor.class, "backLeftMotor");
+        BackRightDrive = hardwareMap.get(DcMotor.class, "backRightMotor");
 
 
         // Most robots need the motor on one side to be reversed to drive forward
@@ -76,8 +76,10 @@ public class Mecanum_BasicOpMode_Linear extends LinearOpMode {
         while (opModeIsActive()) {
 
             // Setup a variable for each drive wheel to save power level for telemetry
-            double leftPower;
-            double rightPower;
+            double frontLeftPower;
+            double frontRightPower;
+            double backLeftPower;
+            double backRightPower;
 
             // Choose to drive using either Tank Mode, or POV Mode
             // Comment out the method that's not used.  The default below is POV.
@@ -87,21 +89,23 @@ public class Mecanum_BasicOpMode_Linear extends LinearOpMode {
             double drive = -gamepad1.left_stick_y;
             double turn  =  gamepad1.right_stick_x;
 
-            leftPower    = Range.clip(drive + turn, -1.0, 1.0) ;
-            rightPower   = Range.clip(drive - turn, -1.0, 1.0) ;
+            frontLeftPower = Range.clip(drive + turn, -1.0, 1.0) ;
+            backLeftPower = frontLeftPower;
+            frontRightPower   = Range.clip(drive - turn, -1.0, 1.0) ;
+            backRightPower = frontRightPower;
 
             if(gamepad1.right_bumper) {
-                FrontLeftDrive.setPower(-1);
-                FrontRightDrive.setPower(1);
-                BackLeftDrive.setPower(1);
-                BackRightDrive.setPower(-1);
+                frontLeftPower = -1;
+                backLeftPower = 1;
+                frontRightPower =1;
+                backRightPower =-1;
             }
 
             if(gamepad1.left_bumper) {
-                FrontLeftDrive.setPower(1);
-                FrontRightDrive.setPower(-1);
-                BackLeftDrive.setPower(-1);
-                BackRightDrive.setPower(1);
+                frontLeftPower = 1;
+                backLeftPower = -1;
+                frontRightPower = -1;
+                backRightPower = 1;
             }
 
             // Tank Mode uses one stick to control each wheel.
@@ -110,14 +114,14 @@ public class Mecanum_BasicOpMode_Linear extends LinearOpMode {
             // rightPower = -gamepad1.right_stick_y ;
 
             // Send calculated power to wheels
-            FrontLeftDrive.setPower(leftPower);
-            BackLeftDrive.setPower(leftPower);
-            FrontRightDrive.setPower(rightPower);
-            BackRightDrive.setPower(rightPower);
+            FrontLeftDrive.setPower(frontLeftPower);
+            BackLeftDrive.setPower(backLeftPower);
+            FrontRightDrive.setPower(frontRightPower);
+            BackRightDrive.setPower(backRightPower);
 
             // Show the elapsed game time and wheel power.
             telemetry.addData("Status", "Run Time: " + runtime.toString());
-            telemetry.addData("Motors", "left (%.2f), right (%.2f)", leftPower, rightPower);
+            telemetry.addData("Motors", "front left (%.2f), front right (%.2f), back left (%.2f), back right (%.2f)", frontLeftPower, frontRightPower, backLeftPower, backRightPower);
             telemetry.update();
         }
     }
