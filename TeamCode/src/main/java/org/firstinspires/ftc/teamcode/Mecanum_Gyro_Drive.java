@@ -3,12 +3,19 @@ package org.firstinspires.ftc.teamcode;
 
 
 import com.qualcomm.hardware.bosch.BNO055IMU;
+import com.qualcomm.hardware.bosch.JustLoggingAccelerationIntegrator;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
+import org.firstinspires.ftc.robotcore.external.Func;
+import org.firstinspires.ftc.robotcore.external.navigation.Acceleration;
+import org.firstinspires.ftc.robotcore.external.navigation.AngleUnit;
+import org.firstinspires.ftc.robotcore.external.navigation.AxesOrder;
+import org.firstinspires.ftc.robotcore.external.navigation.AxesReference;
+import org.firstinspires.ftc.robotcore.external.navigation.Orientation;
 import org.firstinspires.ftc.robotcore.external.navigation.Position;
 import org.firstinspires.ftc.robotcore.external.navigation.Velocity;
 
@@ -29,8 +36,14 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
     public double backRightPower;
     public double straftingSpead = .75;
     public int straftingDirection = 1;
-    // The IMU sensor object
-    BNO055IMU imu;
+    public double initialAngle;
+    public double currentAngle;
+    // The gyro sensor
+    public BNO055IMU imu;
+
+    // State used for updating telemetry
+    public Orientation angles;
+    Acceleration gravity;
 
     @Override
     public void runOpMode() {
@@ -55,6 +68,20 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         backRightDrive.setDirection(DcMotor.Direction.REVERSE);
         backLeftDrive.setDirection(DcMotor.Direction.FORWARD);
 
+        BNO055IMU.Parameters parameters = new BNO055IMU.Parameters();
+        parameters.angleUnit           = BNO055IMU.AngleUnit.DEGREES;
+//        parameters.accelUnit           = BNO055IMU.AccelUnit.METERS_PERSEC_PERSEC;
+        parameters.calibrationDataFile = "BNO055IMUCalibration.json"; // see the calibration sample opmode
+        parameters.loggingEnabled      = true;
+        parameters.loggingTag          = "IMU";
+        parameters.accelerationIntegrationAlgorithm = new JustLoggingAccelerationIntegrator();
+
+        // Retrieve and initialize the IMU. We expect the IMU to be attached to an I2C port
+        // on a Core Device Interface Module, configured to be a sensor of type "AdaFruit IMU",
+        // and named "imu".
+        imu = hardwareMap.get(BNO055IMU.class, "imu");
+        imu.initialize(parameters);
+
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
         runtime.reset();
@@ -63,52 +90,127 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         while (opModeIsActive()) {
 
             // Wait until we're told to go
-
             // Setup a variable for each drive wheel to save power level for telemetry
             straftingSpead = .75;
 
-
-            // Choose to drive using either Tank Mode, or POV Mode
-            // Comment out the method that's not used.  The default below is POV.
-
-            // POV Mode uses left stick to go forward, and right stick to turn.
-            // - This uses basic math to combine motions and is easier to drive straight.
-            double drive = -gamepad1.left_stick_y;
-            double turn = gamepad1.right_stick_x;
-
+            //OPTION FOR DRIVER CONTROL -- ONLY IF THEY WANT
 //            double straftingSpead = -gamepad1.left_stick_x;
 
-            frontLeftPower = Range.clip(drive + turn, -1.0, 1.0);
-            backLeftPower = frontLeftPower;
-            frontRightPower = Range.clip(drive - turn, -1.0, 1.0);
-            backRightPower = frontRightPower;
+            imu.startAccelerationIntegration(new Position(), new Velocity(), 1000);
+            angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
+            formatAngle(angles.angleUnit, angles.firstAngle);
+
+            initialAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
+
+            forwardDrive();
 
             if (gamepad1.right_bumper) {
                 straftingDirection = 1;
-                straftingSpead(straftingDirection);
+                straftingSpead();
             }
             else if (gamepad1.left_bumper) {
                 straftingDirection = -1;
-                straftingSpead(straftingDirection);
+                straftingSpead();
             }
 
             // Send calculated power to wheels
-            frontLeftDrive.setPower(frontLeftPower);
-            backLeftDrive.setPower(backLeftPower);
-            frontRightDrive.setPower(frontRightPower);
-            backRightDrive.setPower(backRightPower);
+            move();
 
             // Show the elapsed game time and wheel power.
             telemetry.addData("Status", "Run Time: " + runtime.toString());
             telemetry.addData("Motors", "front left (%.2f), front right (%.2f), back left (%.2f), back right (%.2f)", frontLeftPower, frontRightPower, backLeftPower, backRightPower);
+            telemetry.addData("Gamepad", "left_stick_y (%.2f), right_stick_x (%.2f)", -gamepad1.left_stick_y, gamepad1.right_stick_x);
+            telemetry.addData("Angular Heading", new Func<String>() {
+                @Override public String value() {
+                    return formatAngle(angles.angleUnit, angles.firstAngle);
+                }
+            });
             telemetry.update();
         }
     }
 
-    public void straftingSpead(int sDirection) {
-        frontLeftPower = sDirection*straftingSpead;
-        backLeftPower = -sDirection*straftingSpead;
-        frontRightPower = -sDirection*straftingSpead;
-        backRightPower = sDirection*straftingSpead;
+    public void move() {
+        frontLeftDrive.setPower(frontLeftPower);
+        backLeftDrive.setPower(backLeftPower);
+        frontRightDrive.setPower(frontRightPower);
+        backRightDrive.setPower(backRightPower);
+    }
+
+    public void straftingSpead() {
+        frontLeftPower = straftingDirection*straftingSpead;
+        backLeftPower = -straftingDirection*straftingSpead;
+        frontRightPower = -straftingDirection*straftingSpead;
+        backRightPower = straftingDirection*straftingSpead;
+    }
+
+    public void forwardDrive() {
+//        frontLeftPower = Range.clip(drive + turn, -1.0, 1.0);
+//        backLeftPower = frontLeftPower;
+//        frontRightPower = Range.clip(drive - turn, -1.0, 1.0);
+//        backRightPower = frontRightPower;
+
+        //Gets controller values
+        double drive = -gamepad1.left_stick_y;
+        double turn = gamepad1.right_stick_x;
+        currentAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
+        //Drives forward
+        if(Math.abs(drive) > .1) {
+            frontLeftPower = Range.clip(drive, -1.0, 1.0);
+            backLeftPower = frontLeftPower;
+            frontRightPower = Range.clip(drive, -1.0, 1.0);
+            backRightPower = frontRightPower;
+            if(Math.abs(currentAngle-initialAngle) > 2) {
+                turnToHeading();
+            }
+        }
+        //Turns
+        else if (Math.abs(turn) > .1) {
+           turningDrive();
+        }
+    }
+
+    public void turningDrive () {
+        double turn = gamepad1.right_stick_x;
+        frontLeftPower = Range.clip(turn, -1.0, 1.0);
+        backLeftPower = frontLeftPower;
+        frontRightPower = Range.clip(-turn, -1.0, 1.0);
+        backRightPower = frontRightPower;
+    }
+
+    public void turnToHeading () {
+        boolean turningToRight;
+        if(currentAngle-initialAngle > 0 ) {
+            turningToRight = true;
+        }
+        else {
+            turningToRight = false;
+        }
+        while(Math.abs(currentAngle-initialAngle) > 1 ) {
+            if(turningToRight) {
+                frontLeftPower = .5;
+                backLeftPower = .5;
+                frontRightPower = .3;
+                backRightPower = .3;
+            }
+            else {
+                frontLeftPower = .3;
+                backLeftPower = .3;
+                frontRightPower = .5;
+                backRightPower = .5;
+            }
+            move();
+        }
+    }
+
+    //----------------------------------------------------------------------------------------------
+    // Formatting
+    //----------------------------------------------------------------------------------------------
+
+    String formatAngle(AngleUnit angleUnit, double angle) {
+        return formatDegrees(AngleUnit.DEGREES.fromUnit(angleUnit, angle));
+    }
+
+    String formatDegrees(double degrees){
+        return String.format(Locale.getDefault(), "%.1f", AngleUnit.DEGREES.normalize(degrees));
     }
 }
