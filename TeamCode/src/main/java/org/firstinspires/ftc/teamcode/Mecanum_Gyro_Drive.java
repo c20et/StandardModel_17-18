@@ -36,14 +36,12 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
     public double backRightPower;
     public double straftingSpead = .75;
     public int straftingDirection = 1;
-    public double initialAngle;
     public double currentAngle;
     // The gyro sensor
     public BNO055IMU imu;
 
     // State used for updating telemetry
     public Orientation angles;
-    Acceleration gravity;
 
     @Override
     public void runOpMode() {
@@ -100,15 +98,22 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
             angles = imu.getAngularOrientation(AxesReference.INTRINSIC, AxesOrder.ZYX, AngleUnit.DEGREES);
             formatAngle(angles.angleUnit, angles.firstAngle);
 
-            initialAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
+           final double initialAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
 
-            forwardDrive();
+            double drive = -gamepad1.left_stick_y;
+            double turn = gamepad1.right_stick_x;
 
+            if(drive > .1) {
+                forwardDrive(drive, initialAngle);
+            }
+            else if (turn > .1 ) {
+                turningDrive();
+            }
             if (gamepad1.right_bumper) {
                 straftingDirection = 1;
                 straftingSpead();
             }
-            else if (gamepad1.left_bumper) {
+            if (gamepad1.left_bumper) {
                 straftingDirection = -1;
                 straftingSpead();
             }
@@ -134,6 +139,7 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         backLeftDrive.setPower(backLeftPower);
         frontRightDrive.setPower(frontRightPower);
         backRightDrive.setPower(backRightPower);
+        currentAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
     }
 
     public void straftingSpead() {
@@ -143,29 +149,20 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         backRightPower = straftingDirection*straftingSpead;
     }
 
-    public void forwardDrive() {
-//        frontLeftPower = Range.clip(drive + turn, -1.0, 1.0);
-//        backLeftPower = frontLeftPower;
-//        frontRightPower = Range.clip(drive - turn, -1.0, 1.0);
-//        backRightPower = frontRightPower;
-
-        //Gets controller values
-        double drive = -gamepad1.left_stick_y;
-        double turn = gamepad1.right_stick_x;
-        currentAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
+    public void forwardDrive(double drive, double initialAngle) {
+/*        frontLeftPower = Range.clip(drive + turn, -1.0, 1.0);
+        backLeftPower = frontLeftPower;
+        frontRightPower = Range.clip(drive - turn, -1.0, 1.0);
+        backRightPower = frontRightPower;
+*/
         //Drives forward
-        if(Math.abs(drive) > .1) {
-            frontLeftPower = Range.clip(drive, -1.0, 1.0);
-            backLeftPower = frontLeftPower;
-            frontRightPower = Range.clip(drive, -1.0, 1.0);
-            backRightPower = frontRightPower;
-            if(Math.abs(currentAngle-initialAngle) > 2) {
-                turnToHeading();
-            }
-        }
-        //Turns
-        else if (Math.abs(turn) > .1) {
-           turningDrive();
+        frontLeftPower = Range.clip(drive, -1.0, 1.0);
+        backLeftPower = frontLeftPower;
+        frontRightPower = Range.clip(drive, -1.0, 1.0);
+        backRightPower = frontRightPower;
+        move();
+        if(Math.abs(currentAngle-initialAngle) > 2) {
+            moveToHeading(initialAngle);
         }
     }
 
@@ -177,7 +174,21 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         backRightPower = frontRightPower;
     }
 
-    public void turnToHeading () {
+    public void turnToHeading (double heading, double initialAngle) {
+        double powerMultipler = 1;
+        currentAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
+        double angleDiffrence = Math.abs(currentAngle-initialAngle);
+        while(angleDiffrence > 1 ) {
+            frontLeftPower = .5 * powerMultipler;
+            backLeftPower = frontLeftPower;
+            frontRightPower = -.5 * powerMultipler;
+            backRightPower = frontRightPower;
+            move();
+            angleDiffrence = Math.abs(currentAngle-initialAngle);
+        }
+    }
+
+    public void moveToHeading(double initialAngle) {
         boolean turningToRight;
         if(currentAngle-initialAngle > 0 ) {
             turningToRight = true;
