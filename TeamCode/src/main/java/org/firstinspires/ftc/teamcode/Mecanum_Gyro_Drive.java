@@ -89,7 +89,6 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
 
             // Wait until we're told to go
             // Setup a variable for each drive wheel to save power level for telemetry
-            straftingSpead = .75;
 
             //OPTION FOR DRIVER CONTROL -- ONLY IF THEY WANT
 //            double straftingSpead = -gamepad1.left_stick_x;
@@ -104,16 +103,20 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
             double turn = gamepad1.right_stick_x;
 
             if(drive > .1) {
-                forwardDrive(drive, initialAngle);
+                while(drive > .1) {
+                    forwardDrive(drive, initialAngle);
+                }
             }
-            else if (turn > .1 ) {
-                turningDrive();
+            else if (turn > .1) {
+                while(turn > .1 ) {
+                    turningDrive();
+                }
             }
-            if (gamepad1.right_bumper) {
+            while (gamepad1.right_bumper) {
                 straftingDirection = 1;
                 straftingSpead();
             }
-            if (gamepad1.left_bumper) {
+            while (gamepad1.left_bumper) {
                 straftingDirection = -1;
                 straftingSpead();
             }
@@ -134,6 +137,7 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         }
     }
 
+    //worry
     public void move() {
         frontLeftDrive.setPower(frontLeftPower);
         backLeftDrive.setPower(backLeftPower);
@@ -142,6 +146,7 @@ public class Mecanum_Gyro_Drive extends LinearOpMode {
         currentAngle = Double.parseDouble(formatAngle(angles.angleUnit, angles.firstAngle));
     }
 
+    //dont worry
     public void straftingSpead() {
         frontLeftPower = straftingDirection*straftingSpead;
         backLeftPower = -straftingDirection*straftingSpead;
