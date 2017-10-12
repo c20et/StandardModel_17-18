@@ -35,7 +35,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
-@TeleOp(name="Basic: Linear OpMode", group="Linear Opmode")
+@TeleOp(name="Basic: Linear OpMode2", group="Linear Opmode")
 public class BasicOpMode_Linear extends LinearOpMode {
 
     // Declare OpMode members.
@@ -53,10 +53,10 @@ public class BasicOpMode_Linear extends LinearOpMode {
         // Initialize the hardware variables. Note that the strings used here as parameters
         // to 'get' must correspond to the names assigned during the robot configuration
         // step (using the FTC Robot Controller app on the phone).
-        FrontLeftDrive = hardwareMap.get(DcMotor.class, "frontLeftMotor");
-        FrontRightDrive = hardwareMap.get(DcMotor.class, "frontRightMotor");
-        BackLeftDrive = hardwareMap.get(DcMotor.class, "backLeftMotor");
-        BackRightDrive = hardwareMap.get(DcMotor.class, "backRightMotor");
+        FrontLeftDrive = hardwareMap.get(DcMotor.class, "front_left");
+        FrontRightDrive = hardwareMap.get(DcMotor.class, "front_right");
+        BackLeftDrive = hardwareMap.get(DcMotor.class, "back_left");
+        BackRightDrive = hardwareMap.get(DcMotor.class, "back_right");
 
 
         // Most robots need the motor on one side to be reversed to drive forward
