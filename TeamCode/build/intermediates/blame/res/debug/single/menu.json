@@ -8,6 +8,10 @@
         "source": "/Users/student/.android/build-cache/3344617a295da62bd0b0b1656d0a31abf29c8b1f/output/res/menu/menu_server.xml"
     },
     {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/menu/main_menu.xml",
+        "source": "/Users/student/.android/build-cache/355e2ba8004d53fba2a5d52b9ac1fea5c196a883/output/res/menu/main_menu.xml"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml",
         "source": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/menu/ftc_robot_controller.xml"
     },
@@ -16,11 +20,19 @@
         "source": "/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/res/menu/main_menu.xml"
     },
     {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/menu/menu_server.xml",
+        "source": "/Users/student/.android/build-cache/8212da9f4518f3bb521d99b761ea556ffe7b3234/output/res/menu/menu_server.xml"
+    },
+    {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/menu/menu_server.xml",
         "source": "/Users/student/.android/build-cache/43d294d37447dfa9b92d137cb234eac21bb7b1bd/output/res/menu/menu_server.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml",
         "source": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/menu/ftc_robot_controller.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/menu/ftc_robot_controller.xml",
+        "source": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/menu/ftc_robot_controller.xml"
     }
 ]

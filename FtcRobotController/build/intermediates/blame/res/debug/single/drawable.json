@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_menu.png",
+        "source": "/Users/student/.android/build-cache/355e2ba8004d53fba2a5d52b9ac1fea5c196a883/output/res/drawable/icon_menu.png"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
         "source": "/Users/student/.android/build-cache/5d4127b9498f5f582bc5578fc2be820b7c23873a/output/res/drawable/icon_robotcontroller.png"
     },
@@ -16,8 +20,16 @@
         "source": "/Users/student/.android/build-cache/3344617a295da62bd0b0b1656d0a31abf29c8b1f/output/res/drawable/black_border.xml"
     },
     {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/drawable/button_shape.xml",
+        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/drawable/button_shape.xml"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/debug/drawable/feedback_shape_orange.xml",
         "source": "/Users/student/.android/build-cache/79ce16b8c6593ed1f3682622f8f57418e13cbf9e/output/res/drawable/feedback_shape_orange.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/drawable/feedback_shape_orange.xml",
+        "source": "/Users/student/.android/build-cache/6dbb04aa95dd6d72935e55f1ea1d02038349029f/output/res/drawable/feedback_shape_orange.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_menu.png",
@@ -38,5 +50,13 @@
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
         "source": "/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/res/drawable/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/drawable/black_border.xml",
+        "source": "/Users/student/.android/build-cache/8212da9f4518f3bb521d99b761ea556ffe7b3234/output/res/drawable/black_border.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/debug/drawable/icon_robotcontroller.png",
+        "source": "/Users/student/.android/build-cache/355e2ba8004d53fba2a5d52b9ac1fea5c196a883/output/res/drawable/icon_robotcontroller.png"
     }
 ]
