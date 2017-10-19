@@ -1,5 +1,3 @@
-//MecanumTest only sets motors to one speed to strafe, this will use two
-
 package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -20,6 +18,7 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
     private DcMotor BackLeftDrive = null;
     private DcMotor BackRightDrive = null;
     private DcMotor LiftDrive = null;
+
     Servo clawservo;
     Servo jewelservo;
 
@@ -28,7 +27,8 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
     static final double MAX_POS_CLAW     =  1.0;     // Maximum rotational position
     static final double MIN_POS_CLAW     =  0.0;     // Minimum rotational position
     static final double MAX_POS_JEWEL     =  1.0;     // Maximum rotational position
-    static final double MIN_POS_JEWEL     =  0.0;
+    static final double MIN_POS_JEWEL     =  0.50;
+
 
     // Define class members
     double strafepower = 0.50;
@@ -71,40 +71,46 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
         // Wait for the game to start (driver presses PLAY)
         waitForStart();
         runtime.reset();
+        boolean abuttonchanged = true;
+        boolean bbuttonchanged = true;
+        double cservopos = 0;
+        double jservopos = 0;
         // run until the end of the match (driver presses STOP)
         while (opModeIsActive()) {
-//            if (gamepad1.b) { //close
-//                cservoposition += INCREMENT;
-//            }
-//
-//            if (gamepad1.a) { //open
-//                cservoposition -= INCREMENT;
-//            }
-//
-//            if (cservoposition >= 1)  cservoposition = 1;
-//            if (cservoposition <= 0) cservoposition = 0;
 
+            // CLAW SERVO CONTROL
+            if(abuttonchanged) {
+                if(gamepad1.a) {
+                    if(cservopos == MIN_POS_CLAW) {
+                        cservopos = MAX_POS_CLAW;
+                    } else {
+                        cservopos = MIN_POS_CLAW;
+                    }
+                    clawservo.setPosition(cservopos);
+                    abuttonchanged = false;
+                }
+            }
 
-//            // Display the current value
-//            telemetry.addData(" Claw Servo Position", "%5.2f", cservoposition);
-//            telemetry.addData(">", "Press Stop to end test." );
-//            telemetry.update();
+            if(!gamepad1.a){
+                abuttonchanged = true;
+            }
 
-            // Set the servo to the new position and pause;
-//            clawservo.setPosition(cservoposition);
-//            sleep(CYCLE_MS); //ASK IF THIS IS NECESSARY....IS THIS WHY OUR SERVOS ARE STALLING???
+            // JEWEL SERVO CONTROL
+            if(bbuttonchanged) {
+                if(gamepad1.b) {
+                    if(jservopos == MAX_POS_JEWEL) {
+                        jservopos = MIN_POS_CLAW;
+                    } else {
+                        jservopos = MAX_POS_JEWEL;
+                    }
+                    jewelservo.setPosition(jservopos);
+                    bbuttonchanged = false;
+                }
+            }
 
-            // Choose to drive using either Tank Mode, or POV Mode
-            // Comment out the method that's not used.  The default below is POV.
-
-            // POV Mode uses left stick to go forward, and right stick to turn.
-            // - This uses basic math to combine motions and is easier to drive straight.
-
-            //SERVO CONTROL
-            if(gamepad1.b) clawservo.setPosition(0);
-            else clawservo.setPosition(1);
-            if(gamepad1.a) jewelservo.setPosition(0);
-            else jewelservo.setPosition(1);
+            if(!gamepad1.b){
+                bbuttonchanged = true;
+            }
 
             //DRIVING CONTROL
             double drive = -1 * gamepad1.left_stick_y; // -1 is because the robot drives backwardks when the joystick is pushed downwards
@@ -143,15 +149,14 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
     }
 
     public void Strafe(int strafedirection, double stickpos) {
-        if(stickpos < 0.4) {
-            strafepower = 0.3;
-        } else if(stickpos > 0.4 && stickpos < 0.7) {
-            strafepower = 0.6;
+        if(stickpos < 0.5 && stickpos > -0.5) {
+            strafepower = 0.5;
         } else {
             strafepower = 1.0;
         }
-        double FRpower = -strafedirection * strafepower;
-        double BLpower =  -strafedirection * strafepower;
+
+        double FRpower = -1 *strafedirection * strafepower;
+        double BLpower =  -1 * strafedirection * strafepower;
         double BRpower = strafedirection * strafepower;
         double FLpower =  strafedirection * strafepower ;
 
@@ -182,6 +187,7 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
         BLpower = Range.clip(BLpower, -1.0, 1.0) ;
         FRpower = Range.clip(FRpower, -1.0, 1.0) ;
 
+
         //if a motor power is less than .1 and more than -.1, set to 0
 
         if(FLpower < 0.1 && FLpower > -0.1 ) {
@@ -209,4 +215,5 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
     }
 
 }
+
 
