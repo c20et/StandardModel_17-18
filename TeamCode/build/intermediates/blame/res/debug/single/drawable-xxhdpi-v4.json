@@ -10,5 +10,9 @@
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
         "source": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/drawable-xxhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/default/res/drawable-xxhdpi-v4/ic_launcher.png"
     }
 ]

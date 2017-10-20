@@ -10,5 +10,9 @@
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_launcher.png",
         "source": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4/ic_launcher.png",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/debug/res/drawable-xxhdpi-v4/ic_launcher.png"
     }
 ]

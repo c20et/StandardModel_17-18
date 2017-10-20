@@ -4,6 +4,14 @@
         "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/xml/pushbot.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/maxmodules.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/maxmodules.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/rev_scoot.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/rev_scoot.xml"
+    },
+    {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/squarebot.xml",
         "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/xml/squarebot.xml"
     },
@@ -40,6 +48,10 @@
         "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/xml/k9legacybot.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/advanced_rc_settings.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/advanced_rc_settings.xml"
+    },
+    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/xml/pushbotsens.xml",
         "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/xml/pushbotsens.xml"
     },
@@ -52,8 +64,20 @@
         "source": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/xml/device_filter.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/squarebot.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/squarebot.xml"
+    },
+    {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/rev_scoot.xml",
         "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/xml/rev_scoot.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/device_filter.xml",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/default/res/xml/device_filter.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/k9legacybot.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/k9legacybot.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/maxmodules.xml",
@@ -66,6 +90,10 @@
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/maxmodules.xml",
         "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/xml/maxmodules.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/pushbot.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/pushbot.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/k9usbbot.xml",
@@ -96,8 +124,16 @@
         "source": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/xml/device_filter.xml"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/app_settings.xml",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/default/res/xml/app_settings.xml"
+    },
+    {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/advanced_rc_settings.xml",
         "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/xml/advanced_rc_settings.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/k9usbbot.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/k9usbbot.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/xml/k9usbbot.xml",
@@ -110,6 +146,10 @@
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/pushbot.xml",
         "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/xml/pushbot.xml"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/xml/pushbotsens.xml",
+        "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/xml/pushbotsens.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/xml/pushbotsens.xml",

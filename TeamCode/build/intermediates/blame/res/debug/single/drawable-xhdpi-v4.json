@@ -16,6 +16,10 @@
         "source": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_menu.png"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_launcher.png"
+    },
+    {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
         "source": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_launcher.png"
     },
@@ -24,12 +28,20 @@
         "source": "/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_robotcontroller.png"
     },
     {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_robotcontroller.png",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_robotcontroller.png"
+    },
+    {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png",
         "source": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_menu.png"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
         "source": "/Users/student/Documents/FTC/ftc_app-master/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png",
+        "source": "/Users/student/StudioProjects/StandardModel_17-18REAL/FtcRobotController/build/intermediates/bundles/default/res/drawable-xhdpi-v4/icon_menu.png"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_robotcontroller.png",
