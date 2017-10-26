@@ -3,120 +3,120 @@
 
     <item
         is-multidex="false"
-        jar="/Users/student/.android/build-cache/f8a7d29e688c564848a91531b348af59c8a864b7/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="9da82f9829b6cafb8407989729481220ca06c905">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_115a04f2de75612091b82ec1aeaa0e75fe6c8dca.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/jars/libs/gson-extras-0.2.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/gson-extras-0.2.1_180cab61f1e0e1c8bf854447e15b41750e97114e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="63096d280a6d0792ddbe5601216c3bc2bb685e8c">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_90e84eb6618e949290a5fab5b5dac96fc38e65d0.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/jars/libs/support-annotations-23.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_8d0ac71128d2ef291ed71f16f67f6d83283b5d97.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="e259d01a014f392930432e85cc1ac9bf807a92df">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_fc028f7da775afba84fd7fe999d9cc59da695a64.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/07e9d41a2931e5b977e21a89391563d817d8a5e6/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_ff97782dee137a283696170a5c784a70e3b3603d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/jars/libs/Vuforia.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/Vuforia_1fb8c17792e6f63aa5cb07ea358f6f66e0fd3382.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/c8b31e458d807bf9e4baf7f09035b54183d6fa32/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_1bc401058ff34a8d0a015be72df5664a5ec312e5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c2abba0621a5319232804767218216568263aa37">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_12031b16904b5b132bbc8d23dfa53c18be8ba00d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/43d294d37447dfa9b92d137cb234eac21bb7b1bd/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="75bdc736b17d8f39d246beac357cb3a0e007fcfa">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_86e85c8d9ea2ced1c71b7d4bc912b438a0247e67.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/jars/libs/javac.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.3"
-        sha1="c576121aac49e547b39aedfb1daa29782db4166c">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/javac_78a43a6eb1290867156c7f9b0ed6a6c6f017885a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/student/.android/build-cache/8d0400187b1a46993ec0b602d6701833990f7576/output/jars/libs/gson-2.8.0.jar"
+        jar="/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/jars/libs/gson-2.8.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="e118dd0900e4a18fb928ebb8df2d9fbda78f2b5d">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/gson-2.8.0_71c89694f85e3e9a7fd701041dfc97c2753e43e6.jar" />
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/gson-2.8.0_ea3fe74ba516fd5cc5f1b9735c40c6dab809c0b8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/student/.android/build-cache/14622f5fd080dbf894487943829b84a2a0eea28a/output/jars/classes.jar"
+        jar="/Users/student/.android/build-cache/f7daf8824e6fe2a10b52d3b3906c8427d027657b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9da82f9829b6cafb8407989729481220ca06c905">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_5518b2d2ee0e3a5f8d45a15dde7a329536d1dd7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/9507050fdd94e80a6b2344cc0d4c70e06f834426/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
         sha1="96cbbea552fe9bf3c56540c7e4912eb5cf72301e">
-        <dex dex="/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_e141d4c5e446ec637050ad28383a88623a77e76e.jar" />
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_b97b5771a44c2cf10ab59ca0b904e5df87e01678.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="e259d01a014f392930432e85cc1ac9bf807a92df">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_6dc15601ea87e9057ffb18121a5b69b61c680d99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/0bfe3a61f97445e1b7366e2fe9a772dee27d52f9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9403be210676ed196cdcc64c7391b9ae2361c174">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_da1d53de4d31c09b1f88397b0c5ced05937845c0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/jars/libs/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5a214d3b1b12e72f4fb0d5d5d8d0ec43c96de2b5">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_949fede58123ed0525b24d62bb479c057ed643b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/d951e13828ccce16bdf38a6a98c8b0e6198733b2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="75bdc736b17d8f39d246beac357cb3a0e007fcfa">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_5d7446b7a41e10d8c581af76417e52fdb0eed622.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/jars/libs/Vuforia.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="91b46366eb9f8203073ee2935087c097c888c0ed">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/Vuforia_0348e908f04f0924b4f72adfb297a8c2bac957e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/jars/libs/gson-extras-0.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b30c2655badcc7ce97f84e49f777b7dd154bad57">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/gson-extras-0.2.1_33dda3edf3103e91235c8553294a487ae2dd8d11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c2abba0621a5319232804767218216568263aa37">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_61f0f804a34c88a1f8a24d5130796487bf7c5e12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/Documents/GitHub/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="63096d280a6d0792ddbe5601216c3bc2bb685e8c">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_f399a86c8ccce73f0546246af35d5bb0fd7c9f75.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/jars/libs/javac.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c576121aac49e547b39aedfb1daa29782db4166c">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/javac_f4bef2c58370ef31c01c72938c49f9ad03c13767.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/student/.android/build-cache/bae22635f67b6104d9873c8e90f95f37695e456a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9dafed45e330aec14abcce05bdb7bbdb2a2d7092">
+        <dex dex="/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/pre-dexed/debug/classes_bcd297f9cf26f2ab7fd624e34ce114f735b0e41a.jar" />
     </item>
 
 </items>
