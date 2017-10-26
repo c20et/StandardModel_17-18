@@ -1,7 +1,7 @@
 [
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/loading_indicator_overlay.xml",
-        "source": "/Users/student/.android/build-cache/6dbb04aa95dd6d72935e55f1ea1d02038349029f/output/res/layout/loading_indicator_overlay.xml"
+        "source": "/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/res/layout/loading_indicator_overlay.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/banner_parent.xml",
@@ -13,7 +13,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/red_line.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/red_line.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/red_line.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module_configure_address.xml",
@@ -21,19 +21,19 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/header.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/header.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/header.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/servo_list.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/servo_list.xml"
-    },
-    {
-        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml",
-        "source": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/layout/activity_ftc_controller.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/servo_list.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/i2cs.xml",
         "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/layout/i2cs.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml",
+        "source": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/FtcRobotController/build/intermediates/bundles/default/res/layout/activity_ftc_controller.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/matrices.xml",
@@ -49,23 +49,23 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_configuration.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_ftc_configuration.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_ftc_configuration.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/port_attached_row.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/port_attached_row.xml"
-    },
-    {
-        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/motor_controller_banner.xml",
-        "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/layout/motor_controller_banner.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/port_attached_row.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/info_button.xml",
         "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/layout/info_button.xml"
     },
     {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/motor_controller_banner.xml",
+        "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/layout/motor_controller_banner.xml"
+    },
+    {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/servo.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/servo.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/servo.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/port_attached_row.xml",
@@ -93,7 +93,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/servo_controller_banner.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/servo_controller_banner.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/servo_controller_banner.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml",
@@ -101,7 +101,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/lynx_module.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/lynx_module.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/analog_input_device.xml",
@@ -117,7 +117,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/analog_input_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/analog_input_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/analog_input_device.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/legacy.xml",
@@ -129,7 +129,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_config_wifi_direct.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_config_wifi_direct.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_config_wifi_direct.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/button_list.xml",
@@ -149,27 +149,27 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module_configure_address.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/lynx_module_configure_address.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/lynx_module_configure_address.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_blocks.xml",
-        "source": "/Users/student/.android/build-cache/8212da9f4518f3bb521d99b761ea556ffe7b3234/output/res/layout/activity_blocks.xml"
-    },
-    {
-        "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/analog_inputs.xml",
-        "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/layout/analog_inputs.xml"
+        "source": "/Users/student/.android/build-cache/d951e13828ccce16bdf38a6a98c8b0e6198733b2/output/res/layout/activity_blocks.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/analog_output_device.xml",
         "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/layout/analog_output_device.xml"
     },
     {
-        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/header.xml",
-        "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/layout/header.xml"
+        "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/analog_inputs.xml",
+        "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/layout/analog_inputs.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_programming_mode.xml",
         "source": "/Users/student/.android/build-cache/43d294d37447dfa9b92d137cb234eac21bb7b1bd/output/res/layout/activity_programming_mode.xml"
+    },
+    {
+        "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/header.xml",
+        "source": "/Users/student/.android/build-cache/183a994eb04162e2cf9dceb94f3452438f60b080/output/res/layout/header.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module_configure_address.xml",
@@ -193,7 +193,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/matrices.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/matrices.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/matrices.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml",
@@ -201,7 +201,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_configure_from_template.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_configure_from_template.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_configure_from_template.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/file_info.xml",
@@ -209,7 +209,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/info_button.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/info_button.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/info_button.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_remembered_groups.xml",
@@ -224,20 +224,20 @@
         "source": "/Users/student/.android/build-cache/ee97d784c067518bb66338f885655868ebc40660/output/res/layout/template_info.xml"
     },
     {
-        "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/red_line.xml",
-        "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/layout/red_line.xml"
-    },
-    {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_address_update.xml",
         "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/layout/activity_ftc_lynx_address_update.xml"
     },
     {
+        "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/red_line.xml",
+        "source": "/Users/student/.android/build-cache/5b447e85ff43d2c74d71529aa2db6816b997fafa/output/res/layout/red_line.xml"
+    },
+    {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_load.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_load.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_load.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/motor.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/motor.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/motor.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/feedback.xml",
@@ -249,7 +249,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/color_list_preference_line_item.xml",
-        "source": "/Users/student/.android/build-cache/6dbb04aa95dd6d72935e55f1ea1d02038349029f/output/res/layout/color_list_preference_line_item.xml"
+        "source": "/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/res/layout/color_list_preference_line_item.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module.xml",
@@ -257,15 +257,15 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/digital_devices.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/digital_devices.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/digital_devices.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/legacy.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/legacy.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/legacy.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/feedback.xml",
-        "source": "/Users/student/.android/build-cache/6dbb04aa95dd6d72935e55f1ea1d02038349029f/output/res/layout/feedback.xml"
+        "source": "/Users/student/.android/build-cache/ed8b3ef454b1b8f0902a7987d2f5faa2d086d368/output/res/layout/feedback.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/legacy.xml",
@@ -313,7 +313,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/digital_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/digital_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/digital_device.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/simple_device.xml",
@@ -345,7 +345,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/lynx_usb_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/lynx_usb_device.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/motor_list.xml",
@@ -397,7 +397,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/button_list.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/button_list.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/button_list.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/activity_program_and_manage.xml",
@@ -425,7 +425,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/motor_controller_banner.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/motor_controller_banner.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/motor_controller_banner.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/digital_device_lynx.xml",
@@ -433,7 +433,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/simple_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/simple_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/simple_device.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/lynx_usb_device.xml",
@@ -461,7 +461,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/banner_parent.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/banner_parent.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/banner_parent.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/feedback.xml",
@@ -477,7 +477,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/device_interface_module.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/device_interface_module.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/device_interface_module.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_about.xml",
@@ -493,7 +493,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_swap_usb_devices.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_swap_usb_devices.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_swap_usb_devices.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/activity_inspection.xml",
@@ -537,7 +537,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_programming_mode.xml",
-        "source": "/Users/student/.android/build-cache/8212da9f4518f3bb521d99b761ea556ffe7b3234/output/res/layout/activity_programming_mode.xml"
+        "source": "/Users/student/.android/build-cache/d951e13828ccce16bdf38a6a98c8b0e6198733b2/output/res/layout/activity_programming_mode.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/activity_about.xml",
@@ -545,11 +545,11 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/motor_list.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/motor_list.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/motor_list.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_fw_update.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_ftc_lynx_fw_update.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_ftc_lynx_fw_update.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/activity_blocks.xml",
@@ -557,11 +557,11 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/analog_output_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/analog_output_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/analog_output_device.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/digital_device_lynx.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/digital_device_lynx.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/digital_device_lynx.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/button_list.xml",
@@ -589,7 +589,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_inspection.xml",
-        "source": "/Users/student/.android/build-cache/355e2ba8004d53fba2a5d52b9ac1fea5c196a883/output/res/layout/activity_inspection.xml"
+        "source": "/Users/student/.android/build-cache/f7daf8824e6fe2a10b52d3b3906c8427d027657b/output/res/layout/activity_inspection.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/analog_input_device.xml",
@@ -645,7 +645,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/i2c_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/i2c_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/i2c_device.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/legacy.xml",
@@ -653,7 +653,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/template_info.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/template_info.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/template_info.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/activity_blocks.xml",
@@ -661,7 +661,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_lynx_address_update.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_ftc_lynx_address_update.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_ftc_lynx_address_update.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/activity_about.xml",
@@ -681,11 +681,11 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/pwms.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/pwms.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/pwms.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_ftc_wifi_channel_selector.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_ftc_wifi_channel_selector.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/gray_line.xml",
@@ -693,7 +693,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_generic_settings.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_generic_settings.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_generic_settings.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/matrix_devices.xml",
@@ -701,7 +701,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/lynx_module_configure_address_spin_item.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/lynx_module_configure_address_spin_item.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/lynx_module_configure_address_spin_item.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml",
@@ -709,11 +709,11 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/item_list_parent.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/item_list_parent.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/item_list_parent.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/file_info.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/file_info.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/file_info.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/motor_controller_banner.xml",
@@ -733,15 +733,15 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/analog_outputs.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/analog_outputs.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/analog_outputs.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/matrix_devices.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/matrix_devices.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/matrix_devices.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/i2cs.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/i2cs.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/i2cs.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/gray_line.xml",
@@ -801,15 +801,15 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_program_and_manage.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_program_and_manage.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_program_and_manage.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/analog_inputs.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/analog_inputs.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/analog_inputs.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_about.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_about.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_about.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/template_info.xml",
@@ -837,7 +837,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/pwm_device.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/pwm_device.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/pwm_device.xml"
     },
     {
         "merged": "/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_channel_selector.xml",
@@ -853,7 +853,7 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_view_logs.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_view_logs.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_view_logs.xml"
     },
     {
         "merged": "/Users/student/StudioProjects/StandardModel_17-18REAL/TeamCode/build/intermediates/res/merged/debug/layout/pwm_device.xml",
@@ -881,11 +881,11 @@
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_wifi_remembered_groups.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/activity_ftc_wifi_remembered_groups.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/activity_ftc_wifi_remembered_groups.xml"
     },
     {
         "merged": "/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/merged/debug/layout/gray_line.xml",
-        "source": "/Users/student/.android/build-cache/9e693f0557f6369da1b1f49fe60a1aef1115df44/output/res/layout/gray_line.xml"
+        "source": "/Users/student/.android/build-cache/c2b4ec8778d118253d0f9089bb603c5e493b4a42/output/res/layout/gray_line.xml"
     },
     {
         "merged": "/Users/student/Documents/FTC/ftc_app-master/TeamCode/build/intermediates/res/merged/debug/layout/activity_ftc_controller.xml",
