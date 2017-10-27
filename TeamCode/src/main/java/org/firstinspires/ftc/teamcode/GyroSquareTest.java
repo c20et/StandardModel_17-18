@@ -151,6 +151,25 @@ public class GyroSquareTest extends LinearOpMode
         }
     }
 
+    public void turnToAngle(double angle) {
+        angles = imu.getAngularOrientation().toAxesReference(AxesReference.INTRINSIC).toAxesOrder(AxesOrder.ZYX);
+
+        float forwardHeading = angles.firstAngle;
+
+        if (forwardHeading > angle) {
+            FrontLeftDrive.setPower(0.25);
+            FrontRightDrive.setPower(-1 * 0.25);
+            BackLeftDrive.setPower(0.25);
+            BackRightDrive.setPower(-1 * 0.25);
+        } else if (forwardHeading < angle) {
+            FrontLeftDrive.setPower(-1 * 0.25);
+            FrontRightDrive.setPower(0.25);
+            BackLeftDrive.setPower(-1 * 0.25);
+            BackRightDrive.setPower(0.25);
+        }
+
+    }
+
     //----------------------------------------------------------------------------------------------
     // Telemetry Configuration
     //----------------------------------------------------------------------------------------------
