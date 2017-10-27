@@ -7,10 +7,10 @@ import android.view.View;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 
-@Autonomous(name = "Color Sensor", group = "Sensor")
-@Disabled
+@Autonomous(name = "Color Sensor ", group = "Sensor")
 public class ColorSensorTest extends LinearOpMode {
 
     ColorSensor colorSensorR;
@@ -30,8 +30,13 @@ public class ColorSensorTest extends LinearOpMode {
         while (opModeIsActive()) {
 
             // send the info back to driver station using telemetry function.
-            telemetry.addData("RGB VALS (R): ", "red (%.2f), blue (%.2f), green (%.2f)", colorSensorR.red() , colorSensorR.blue(), colorSensorR.green());
-            telemetry.addData("RGB VALS (L): ", "red (%.2f), blue (%.2f), green (%.2f)", colorSensorL.red() , colorSensorL.blue(), colorSensorL.green());
+            telemetry.addData("Red  R: ", colorSensorR.red());
+            telemetry.addData("Green R: ", colorSensorR.green());
+            telemetry.addData("Blue R: ", colorSensorR.blue());
+
+            telemetry.addData("Red  L: ", colorSensorL.red());
+            telemetry.addData("Green L: ", colorSensorL.green());
+            telemetry.addData("Blue L: ", colorSensorL.blue());
 
             telemetry.update();
         }

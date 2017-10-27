@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Oct 26 18:34:16 EDT 2017
+#Thu Oct 26 19:37:59 EDT 2017
 20.base=/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/res/resources-debug.ap_
 143.base=/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/assets/debug
 439.set=ASSET
