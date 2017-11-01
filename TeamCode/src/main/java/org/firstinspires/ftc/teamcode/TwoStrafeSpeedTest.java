@@ -79,21 +79,27 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
         while (opModeIsActive()) {
 
             // CLAW SERVO CONTROL
-            if(abuttonchanged) {
-                if(gamepad1.a) {
-                    if(cservopos == MIN_POS_CLAW) {
-                        cservopos = MAX_POS_CLAW;
-                    } else {
-                        cservopos = MIN_POS_CLAW;
-                    }
-                    clawservo.setPosition(cservopos);
-                    abuttonchanged = false;
-                }
+            if(gamepad2.dpad_left) {
+                cservopos = MAX_POS_CLAW;
+            } else if(gamepad2.dpad_right) {
+                cservopos = MIN_POS_CLAW;
             }
-
-            if(!gamepad1.a){
-                abuttonchanged = true;
-            }
+            clawservo.setPosition(cservopos);
+//            if(abuttonchanged) {
+//                if(gamepad2.a) {
+//                    if(cservopos == MIN_POS_CLAW) {
+//                        cservopos = MAX_POS_CLAW;
+//                    } else {
+//                        cservopos = MIN_POS_CLAW;
+//                    }
+//                    clawservo.setPosition(cservopos);
+//                    abuttonchanged = false;
+//                }
+//            }
+//
+//            if(!gamepad2.a){
+//                abuttonchanged = true;
+//            }
 
             // JEWEL SERVO CONTROL
             if(bbuttonchanged) {
@@ -134,13 +140,22 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
             }
 
             //LIFT MOTOR CONTROL
-            if(gamepad1.x) {
-                LiftDrive.setPower(0.5);
-            } else if(gamepad1.y) {
-                LiftDrive.setPower(-0.5);
-            }else {
-                LiftDrive.setPower(0);
+            double LiftPower;
+            if(gamepad2.dpad_up) {
+                LiftPower = 0.5;
+            } else if (gamepad2.dpad_down) {
+                LiftPower = -1 * 0.5;
+            } else {
+                LiftPower = 0;
             }
+            LiftDrive.setPower(LiftPower);
+//            if(gamepad2.x) {
+//                LiftDrive.setPower(0.5);
+//            } else if(gamepad2.y) {
+//                LiftDrive.setPower(-0.5);
+//            }else {
+//                LiftDrive.setPower(0);
+//            }
 
 
             sleep(CYCLE_MS);
@@ -176,6 +191,13 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
 
 
     }
+    public void grabBlock() {
+
+    }
+    public void releaseBlock() {
+
+    }
+
     public void Drive(double drive, double turn) {
         double FRpower = drive - turn;
         double BRpower = drive - turn;
@@ -215,5 +237,7 @@ public class TwoStrafeSpeedTest extends LinearOpMode {
     }
 
 }
+
+
 
 

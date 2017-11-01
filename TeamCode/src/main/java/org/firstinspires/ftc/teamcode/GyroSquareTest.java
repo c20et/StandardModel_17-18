@@ -157,15 +157,33 @@ public class GyroSquareTest extends LinearOpMode
         float forwardHeading = angles.firstAngle;
 
         if (forwardHeading > angle) {
-            FrontLeftDrive.setPower(0.25);
-            FrontRightDrive.setPower(-1 * 0.25);
-            BackLeftDrive.setPower(0.25);
-            BackRightDrive.setPower(-1 * 0.25);
+            if (forwardHeading - angle >= 180) {
+                //turn left
+                FrontLeftDrive.setPower(0.25);
+                FrontRightDrive.setPower(-1 * 0.25);
+                BackLeftDrive.setPower(0.25);
+                BackRightDrive.setPower(-1 * 0.25);
+            } else {
+                //turn right;
+                FrontLeftDrive.setPower(-1 * 0.25);
+                FrontRightDrive.setPower(0.25);
+                BackLeftDrive.setPower(-1 * 0.25);
+                BackRightDrive.setPower(0.25);
+            }
         } else if (forwardHeading < angle) {
-            FrontLeftDrive.setPower(-1 * 0.25);
-            FrontRightDrive.setPower(0.25);
-            BackLeftDrive.setPower(-1 * 0.25);
-            BackRightDrive.setPower(0.25);
+            if (angle - forwardHeading <= 180) {
+                //turn left
+                FrontLeftDrive.setPower(0.25);
+                FrontRightDrive.setPower(-1 * 0.25);
+                BackLeftDrive.setPower(0.25);
+                BackRightDrive.setPower(-1 * 0.25);
+            } else {
+                //turn right;
+                FrontLeftDrive.setPower(-1 * 0.25);
+                FrontRightDrive.setPower(0.25);
+                BackLeftDrive.setPower(-1 * 0.25);
+                BackRightDrive.setPower(0.25);
+            }
         }
 
     }
