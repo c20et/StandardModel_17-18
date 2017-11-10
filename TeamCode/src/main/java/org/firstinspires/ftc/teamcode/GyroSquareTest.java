@@ -49,7 +49,7 @@ import org.firstinspires.ftc.robotcore.external.navigation.Velocity;
 import java.util.Locale;
 
 
-@Autonomous(name = "Gyro Square Challenge", group = "Sensor")                           // Comment this out to add to the opmode list
+@Autonomous(name = "Gyro Square Challenge", group = "Sensor")// Comment this out to add to the opmode list
 public class GyroSquareTest extends LinearOpMode
 {
     //----------------------------------------------------------------------------------------------

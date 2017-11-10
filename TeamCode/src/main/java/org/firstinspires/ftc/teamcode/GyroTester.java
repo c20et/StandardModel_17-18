@@ -42,12 +42,8 @@ import java.util.Locale;
  */
 
 
-
-
-
-
-
 @Autonomous(name = "Gyro Tester", group = "Sensor")
+
 public class GyroTester extends LinearOpMode
 {
     // The IMU sensor object

@@ -1,4 +1,4 @@
-#Tue Oct 31 17:05:50 EDT 2017
-base.0=/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+#Thu Nov 09 17:32:23 EST 2017
+base.0=/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
-file.0=/Users/student/Documents/Robotics/FTC/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex
+file.0=/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

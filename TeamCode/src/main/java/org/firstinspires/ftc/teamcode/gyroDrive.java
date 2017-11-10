@@ -71,6 +71,7 @@ import com.qualcomm.robotcore.util.Range;
  */
 
 @Autonomous(name="Auto Drive By Gyro", group="dumbBot")
+
 public class gyroDrive extends LinearOpMode {
 
     /* Declare OpMode members. */

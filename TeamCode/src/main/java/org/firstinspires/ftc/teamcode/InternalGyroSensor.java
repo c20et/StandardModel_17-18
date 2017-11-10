@@ -31,6 +31,7 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.hardware.bosch.BNO055IMU;
 import com.qualcomm.hardware.bosch.JustLoggingAccelerationIntegrator;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
@@ -55,6 +56,7 @@ import java.util.Locale;
  */
 
 @TeleOp(name = "Sensor: BNO055 IMU", group = "Sensor")
+
 public class InternalGyroSensor extends LinearOpMode
     {
     //----------------------------------------------------------------------------------------------
