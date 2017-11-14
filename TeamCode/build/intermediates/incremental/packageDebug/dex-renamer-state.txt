@@ -1,4 +1,4 @@
-#Mon Nov 13 20:33:59 EST 2017
+#Tue Nov 14 13:29:17 EST 2017
 base.0=/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/Users/student/Documents/GitHub/StandardModel_17-18/TeamCode/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

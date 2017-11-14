@@ -53,7 +53,7 @@ public class SkipperTeleop extends LinearOpMode {
         rightTop = hardwareMap.get(Servo.class, "right arm servo");
         leftTop = hardwareMap.get(Servo.class, "left arm servo");
 
-        jewelservo = hardwareMap.get(Servo.class, "jewel servo");
+        jewelservo = hardwareMap.get(Servo.class, "lowering servo");
 
         leftBottom = hardwareMap.get(Servo.class, "left bottom claw");
         rightBottom = hardwareMap.get(Servo.class, "right bottom claw");
@@ -92,7 +92,13 @@ public class SkipperTeleop extends LinearOpMode {
         boolean rightBump = false;
         boolean leftBump = false;
 
+
         while (opModeIsActive()) {
+
+            telemetry.addData("Right Top: ", rightTop.getPosition());
+            telemetry.addData("Left Top: ", leftTop.getPosition());
+            telemetry.addData("Right Bottom: ", rightBottom.getPosition());
+            telemetry.addData("Left Bottom: ", leftBottom.getPosition());
 
             if(gamepad2.right_bumper) {
                 if (!rightBump) {
@@ -133,7 +139,6 @@ public class SkipperTeleop extends LinearOpMode {
 
                 telemetry.addLine("Closing Bottom");
             }
-
 
             telemetry.update();
 
