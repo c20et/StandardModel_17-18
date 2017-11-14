@@ -3,7 +3,6 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.Servo;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
@@ -21,8 +20,8 @@ public class SkipperTeleop extends LinearOpMode {
 
 
 
-    Servo shoulderServo;
-    Servo armServo;
+    Servo rightTop;
+    Servo leftTop;
     Servo jewelservo;
     Servo rightBottom;
     Servo leftBottom;
@@ -32,8 +31,8 @@ public class SkipperTeleop extends LinearOpMode {
     static final double DOWN_POS_SHOULDER     =  0.4;     // Minimum rotational position
     static final double UP_POS_SHOULDER     =  0.7;
 
-    static final double DOWN_POS_ARM     =  0.80;
-    static final double UP_POS_ARM     =  0.6 ;
+    static final double OPEN_POS_ARM =  0.80;
+    static final double CLOSE_POS_ARM =  0.40 ;
 
     static final double OPEN_BOTTOM_CLAW = 0.0;
     static final double CLOSE_BOTTOM_CLAW = 0.53;
@@ -45,17 +44,20 @@ public class SkipperTeleop extends LinearOpMode {
     boolean upArm;
 
     //Starting claw positions
-    double  sServoPosition = (UP_POS_SHOULDER);
-    double  aServoPosition = (UP_POS_ARM);
+//    double  topServoPosition = (UP_POS_SHOULDER);
+//    double  tServoPosition = (OPEN_POS_ARM);
     controllerPos previousDrive = controllerPos.ZERO;
 
     @Override
     public void runOpMode() {
-        shoulderServo = hardwareMap.get(Servo.class, "shoulder servo");
-        armServo = hardwareMap.get(Servo.class, "arm servo");
+        rightTop = hardwareMap.get(Servo.class, "right arm servo");
+        leftTop = hardwareMap.get(Servo.class, "left arm servo");
+
         jewelservo = hardwareMap.get(Servo.class, "jewel servo");
+
         leftBottom = hardwareMap.get(Servo.class, "left bottom claw");
         rightBottom = hardwareMap.get(Servo.class, "right bottom claw");
+
         telemetry.addData("Status", "Initialized");
         telemetry.update();
 
@@ -85,33 +87,53 @@ public class SkipperTeleop extends LinearOpMode {
         boolean abuttonchanged = true;
         boolean bbuttonchanged = true;
         double sservopos = UP_POS_SHOULDER;
-        double aservopos = UP_POS_ARM;
+        double aservopos = CLOSE_POS_ARM;
+
+        boolean rightBump = false;
+        boolean leftBump = false;
 
         while (opModeIsActive()) {
 
-            if(gamepad2.y) {
-                shoulderServo.setPosition(UP_POS_SHOULDER);
-                telemetry.addLine("UP Shoulder");
-                //  upShoulder = true;
-            }
-            else if(gamepad2.x) {
-                shoulderServo.setPosition(DOWN_POS_SHOULDER);
-                telemetry.addLine("DOWN Shoulder");
-            } else if (gamepad2.b) {
-                armServo.setPosition(UP_POS_ARM);
-                telemetry.addLine("UP Arm");
-            } else if(gamepad2.a) {
-                armServo.setPosition(DOWN_POS_ARM);
-                telemetry.addLine("DOWN ARM");
+            if(gamepad2.right_bumper) {
+                if (!rightBump) {
+                    rightBump = true;
+                } else {
+                    rightBump = false;
+                }
             }
 
-            if (gamepad2.dpad_right) {
-                rightBottom.setPosition(OPEN_BOTTOM_CLAW);
-                leftBottom.setPosition(1 - OPEN_BOTTOM_CLAW);
-            } else if (gamepad2.dpad_left) {
-                rightBottom.setPosition(CLOSE_BOTTOM_CLAW);
-                leftBottom.setPosition(1 - CLOSE_BOTTOM_CLAW);
+            if (gamepad2.left_bumper) {
+                if (!leftBump) {
+                    leftBump = true;
+                } else {
+                    leftBump = false;
+                }
             }
+
+            if (rightBump) {
+                rightTop.setPosition(OPEN_POS_ARM);
+                leftTop.setPosition(OPEN_POS_ARM);
+
+                telemetry.addLine("Openning Top");
+            } else {
+                rightTop.setPosition(CLOSE_POS_ARM);
+                leftTop.setPosition(CLOSE_POS_ARM);
+
+                telemetry.addLine("Closing Top");
+            }
+
+            if (leftBump) {
+                rightBottom.setPosition(OPEN_BOTTOM_CLAW);
+                leftBottom.setPosition(OPEN_BOTTOM_CLAW);
+
+                telemetry.addLine("Openning Bottom");
+            } else {
+                rightBottom.setPosition(CLOSE_BOTTOM_CLAW);
+                leftBottom.setPosition(CLOSE_BOTTOM_CLAW);
+
+                telemetry.addLine("Closing Bottom");
+            }
+
 
             telemetry.update();
 
@@ -229,13 +251,13 @@ public class SkipperTeleop extends LinearOpMode {
     }
 
     public void grabBlock() {
-        shoulderServo.setPosition(DOWN_POS_SHOULDER);
-        armServo.setPosition(DOWN_POS_ARM);
+        rightTop.setPosition(DOWN_POS_SHOULDER);
+        leftTop.setPosition(OPEN_POS_ARM);
     }
 
     public void releaseBlock() {
-        shoulderServo.setPosition(UP_POS_SHOULDER);
-        armServo.setPosition(UP_POS_ARM);
+        rightTop.setPosition(UP_POS_SHOULDER);
+        leftTop.setPosition(CLOSE_POS_ARM);
     }
 
     //KEEPS MOTORS FROM STALLING
