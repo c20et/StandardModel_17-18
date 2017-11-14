@@ -15,39 +15,42 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import org.firstinspires.ftc.teamcode.Robot;
 
 @Autonomous(name = "Jewel Color", group = "Sensor")
-
 public class JewelCode extends LinearOpMode {
 
-    ColorSensor colorSensorR;
     ColorSensor colorSensorL;
     Servo loweringJewelServo;
     Servo turningJewelServo;
 
-    public double loweredPosition = 0.7;
-    public double leftPosition = 0.7;
-    public double rightPosition = 0.;
+    public double loweredPosition = 0.2;
+    public double upPosition = 0.7;
+    public double leftPosition = .5;
+    public double rightPosition = 1.0;
     public direction turnDirection;
-    ElapsedTime runtime;
 
     @Override
     public void runOpMode() {
-        colorSensorR = hardwareMap.get(ColorSensor.class, "color sensor right");
         colorSensorL = hardwareMap.get(ColorSensor.class, "color sensor left");
+        loweringJewelServo = hardwareMap.get(Servo.class, "lowering servo" );
+        turningJewelServo = hardwareMap.get(Servo.class, "turning servo");
 
         waitForStart();
-        runtime.reset();
 
         boolean finishedHitting = false;
         lowerJewelMech();
 
         while (opModeIsActive() && !finishedHitting) {
+
             RedJewelLocation redLocation = getColor();
             if(redLocation != RedJewelLocation.INCONCLUSIVE) {
                 chooseTurnDirection(redLocation);
+
                 turn();
+                telemetry.update();
+
                 finishedHitting = true;
             }
         }
+        loweringJewelServo.setPosition(upPosition);
     }
 
     public void chooseTurnDirection(RedJewelLocation redLocation) {
@@ -67,13 +70,26 @@ public class JewelCode extends LinearOpMode {
     }
 
     public RedJewelLocation getColor() {
-        if (colorSensorR.red() > colorSensorL.red() || colorSensorL.blue() > colorSensorR.blue() || colorSensorR.red() > colorSensorR.blue()) {
+        if (colorSensorL.blue() > 0) {
+
+            telemetry.addLine("Right");
+            telemetry.update();
+
             return RedJewelLocation.RED_JEWEL_RIGHT;
         }
-        if (colorSensorL.red() > colorSensorR.red() || colorSensorR.blue() > colorSensorR.red() || colorSensorL.red() > colorSensorR.blue()) {
+        if (colorSensorL.red() > 0) {
+
+            telemetry.addLine("Left");
+            telemetry.update();
+
             return RedJewelLocation.RED_JEWEL_LEFT;
         }
+
+        telemetry.addLine("INCONCLUSIVE");
+        telemetry.update();
+
         return RedJewelLocation.INCONCLUSIVE;
+
     }
 
     public enum RedJewelLocation {
@@ -86,6 +102,9 @@ public class JewelCode extends LinearOpMode {
 
     public void lowerJewelMech() {
         loweringJewelServo.setPosition(loweredPosition);
+
+        telemetry.addLine("Servo lowered");
+        telemetry.update();
     }
 
     public enum direction {
@@ -93,12 +112,25 @@ public class JewelCode extends LinearOpMode {
     }
 
     public void turn() {
+
         if (turnDirection == direction.Right) {
-            turningJewelServo.setPosition(rightPosition);
+            while (turningJewelServo.getPosition() != rightPosition) {
+                telemetry.addData("Servo Position: ", turningJewelServo.getPosition());
+                telemetry.addLine("Reached");
+
+                turningJewelServo.setPosition(rightPosition);
+            }
+
         }
         else{
-            turningJewelServo.setPosition(leftPosition);
+            while (turningJewelServo.getPosition() != leftPosition) {
+                telemetry.addData("Servo Position: ", turningJewelServo.getPosition());
+                telemetry.addLine("Reached");
+
+                turningJewelServo.setPosition(leftPosition);
+            }
         }
+
     }
 
     public TeamAlliance getAlliance() {

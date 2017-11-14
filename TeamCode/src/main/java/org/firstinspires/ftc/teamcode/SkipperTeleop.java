@@ -154,8 +154,8 @@ public class SkipperTeleop extends LinearOpMode {
             FrontRightDrive.setPower(0);
             BackRightDrive.setPower(0);
         }
-
     }
+
     public enum clawPos {
         OPEN, CLOSE;
     }
