@@ -19,28 +19,20 @@ public class ServoTest extends LinearOpMode {
     //static final double INCREMENT   = 0.01;     // amount to slew servo each CYCLE_MS cycle
     static final int CYCLE_MS = 500;     // period of each cycle
 
-    static final double OPEN_POS_ARM = 0.80;
-    static final double CLOSE_POS_ARM = 0.40;
-
-    static final double OPEN_BOTTOM_CLAW = 0.0;
-    static final double CLOSE_BOTTOM_CLAW = 0.53;
-
-    public static double posRT = .1;
-    public static double posLT = .9;
-    public static double posRB = .9;
-    public static double posLB = .1;
+    public static double posRT = 0;
+    public static double posLT = 1;
+    public static double posRB = .74;
+    public static double posLB = 1-posRB;
 
 
     //Starting claw positions
-//    double  topServoPosition = (UP_POS_SHOULDER);
+//    double  topServoPosition = (UP_POS_SHOULDE
 //    double  tServoPosition = (OPEN_POS_ARM);
 
     @Override
     public void runOpMode() {
-        rightTop = hardwareMap.get(Servo.class, "right arm servo");
-        leftTop = hardwareMap.get(Servo.class, "left arm servo");
-
-        jewelservo = hardwareMap.get(Servo.class, "lowering servo");
+        rightTop = hardwareMap.get(Servo.class, "right top claw");
+        leftTop = hardwareMap.get(Servo.class, "left top claw");
 
         leftBottom = hardwareMap.get(Servo.class, "left bottom claw");
         rightBottom = hardwareMap.get(Servo.class, "right bottom claw");
@@ -66,16 +58,20 @@ public class ServoTest extends LinearOpMode {
             telemetry.addData("Left Bottom: ", leftBottom.getPosition());
 
             if (gamepad2.a) {
-                posRT += .1;
+                posRT += .005;
+                posLT -= .005;
             }
             if (gamepad2.b) {
-                posLT -= .1;
+                posRT -= .005;
+                posLT += .005;
             }
             if (gamepad2.x) {
-                posRB -= .1;
+                posRB -= .005;
+                posLB += .005;
             }
             if (gamepad2.y) {
-                posLB += .1;
+                posRB += .005;
+                posLB -= .005;
             }
 
             setServos();
@@ -90,7 +86,7 @@ public class ServoTest extends LinearOpMode {
         rightTop.setPosition(posRT);
         leftTop.setPosition(posLT);
 
-        rightBottom.setPosition(posRB);
+        rightBottom.setPosition(posRB+.1);
         leftBottom.setPosition(posLB);
     }
 }
